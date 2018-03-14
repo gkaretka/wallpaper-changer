@@ -11,6 +11,6 @@ files = os.listdir()
 while (True):
     for file in files:
         if file.endswith(".jpg") or file.endswith(".png"):
-            cmd = "fbsetbg -f " + file + " -l &"
+            cmd = "feh --bg-fill " + file
             os.system(cmd)
-            sleep(sleep_time)  
+            sleep(sleep_time)
